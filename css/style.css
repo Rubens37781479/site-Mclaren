@@ -1,0 +1,138 @@
+@font-face {
+    font-family: speed;
+    src: url(../fonts/A4SPEED-Bold.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202021;
+    font-family: speed;
+}
+
+.cabecalho ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(255, 255, 240);
+}
+
+.cabecalho img {
+    height: 4vw;
+    margin: 0.2vw 0.6vw;
+}
+
+.cabecalho li {
+    padding-right: 1.5vw;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #000;
+    padding: 1vw;
+    transition: all 0.3s;
+    border-radius: 0.2vw;
+}
+
+.cabecalho li a:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #fa3d43;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vw;
+    flex-direction: column;
+    width: 70vw;
+    margin: 10vw 15vw;
+}
+
+.container h1 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5vw;
+}
+
+.container p {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container .conteudo {
+    background-color:  #101010;
+    padding:  2vw 4vw;
+    border-top-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    border-top: #fa3d43;
+}
+
+.container .conteudo img{
+    float: left;
+    height: 10vw;
+    margin: 1vw 1.5vw 0.4vw 0vw;
+}
+
+.container #criador{
+    width: 15vw;
+    height: 22vw;
+}
+
+.container iframe{
+    margin-left: 19%;
+}
+
+.conteudo hr{
+    margin: 2vw;
+}
+
+#fotos .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#fotos .container a img{
+    width: 30vw;
+    height: 15vw;
+    transition: all 0.2s linear;
+}
+
+#fotos .container img:hover{
+    transform: scale(75%);
+}
+
+#fotos h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+#videos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.container #modelo_especial{
+    width: 57vw;
+    height: 30vw;
+}
+
+#rodape .container{
+    color: #fff;
+}
